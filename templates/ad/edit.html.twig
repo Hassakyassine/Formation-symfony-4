@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Edition d'une annonce {% endblock %}
+
+{% form_theme form 'ad/_collection.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Modifier l'annonce :{{ad.title}}</h1>
+
+       {{ form_start(form) }}
+
+       {#} <div class="form-groupe">
+            {{ form_label(form.title )}}
+            {{ form_widget(form.title,{
+                'attr':{'class': 'form-control', 'placeholder':'Titrede l\'annonce'}
+            })}}
+        </div>
+        <div class="form-groupe">
+            {{ form_label(form.introduction )}}
+            {{ form_widget(form.introduction,{
+                'attr':{'class': 'form-control', 'placeholder':'Titrede l\'annonce'}
+            })}}
+        </div>#}
+        {{ form_widget(form) }}
+
+        <button class="btn btn-primary">Modifier votre annonce</button>
+
+        {{ form_end(form) }} 
+
+
+
+        {#  {{ form(form) }}#}
+
+    </div>
+
+{% endblock %}
+
+
+
+{% block javascripts %}
+
+ <script src="/js/ad.js"></script>
+
+{% endblock %}
