@@ -29,5 +29,9 @@ div.carousel-caption{
 
 .avatar-mini{
     max-width: 24px;
-    min-width: 24px;
+    max-width: 24px;
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover{
+    color:firebrick !important ;
 }

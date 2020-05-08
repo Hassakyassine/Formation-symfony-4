@@ -17,7 +17,7 @@
         {% if app.user %}
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="accountDropdownLink">
-              <img src="{{app.user.picture}}" class="avtar avatar-mini" alt="Avatade
+              <img src="{{app.user.picture}}" class="avatar avatar-mini" alt="Avatade
               {{app.user.fullName}}"> {{app.user.fullName}} 
             </a>
 
@@ -25,6 +25,7 @@
             <a href="{{ path('ads_create') }}" class="dropdown-item">Créé un nouvelle Annonce</a>
             <div class="dropdown-divider"></div>
             <a href="{{ path('account_index') }}" class="dropdown-item">Mon compte</a>
+            <a href="{{ path('account_bookings') }}" class="dropdown-item">Més réservations</a>
             <a href="{{ path('account_profile')}}" class="dropdown-item">Modifier mon profile</a>
             <div class="dropdown-divider"></div>
             <a href="{{ path('account_logout') }}" class="dropdown-item">Déconnexion</a>
