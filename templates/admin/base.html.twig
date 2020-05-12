@@ -6,13 +6,12 @@
         <meta name="ViewPort" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-        
         <link rel="stylesheet" href="/css/app.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
     
-    {% include 'partials/header.html.twig'  %}
+    {% include 'admin/partials/header.html.twig'  %}
 
   {#  {{dump(app.flashes)}} c'est pour le test #}
 
@@ -21,7 +20,7 @@
    <!-- <p>Vous etes sur mon site web</p> -->
         {% block body %}{% endblock %}
 
-        {% include 'partials/footer.html.twig'  %}
+        {% include 'admin/partials/footer.html.twig'  %}
 
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
